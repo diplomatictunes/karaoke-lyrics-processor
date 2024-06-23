@@ -37,6 +37,8 @@ class KaraokeLyricsProcessor:
         else:
             raise ValueError("Either input_lyrics or input_filename must be set, but not both.")
 
+        self.processed_lyrics_text = ""
+
     def read_input_lyrics_file(self):
         with open(self.input_filename, "r") as infile:
             return infile.readlines()
@@ -154,6 +156,8 @@ class KaraokeLyricsProcessor:
         return processed_lyrics_text
 
     def write_to_output_file(self):
+        if not hasattr(self, 'processed_lyrics_text') or not self.processed_lyrics_text:
+            self.process()
 
         with open(self.output_filename, "w") as outfile:
             outfile.write(self.processed_lyrics_text)

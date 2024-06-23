@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "karaoke-lyrics-processor"
+version = "0.1.2"
+description = "Process song lyrics to prepare them for karaoke video production, e.g. by splitting long lines"
+authors = ["Craig W  <diplomatictunes@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+# Other dependencies...
+
+[tool.poetry.repositories]
+github = { url = "https://maven.pkg.github.com/diplomatictunes/karaoke-lyrics-processor" }
+
+[tool.poetry.publish]
+github = { repository = "diplomatictunes/karaoke-lyrics-processor" }

@@ -2,13 +2,13 @@
 name = "karaoke-lyrics-processor"
 version = "0.1.2"
 description = "Process song lyrics to prepare them for karaoke video production, e.g. by splitting long lines"
-authors = ["Andrew Beveridge <andrew@beveridge.uk>"]
+authors = ["Andrew Beveridge <andrew@beveridge.uk>", "Craig W <diplomatictunes@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{ include = "karaoke_lyrics_processor" }]
-homepage = "https://github.com/karaokenerds/karaoke-lyrics-processor"
-repository = "https://github.com/karaokenerds/karaoke-lyrics-processor"
-documentation = "https://github.com/karaokenerds/karaoke-lyrics-processor/blob/main/README.md"
+homepage = "https://github.com/diplomatictunes/karaoke-lyrics-processor"
+repository = "https://github.com/diplomatictunes/karaoke-lyrics-processor"
+documentation = "https://github.com/diplomatictunes/karaoke-lyrics-processor/blob/main/README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
@@ -18,7 +18,7 @@ black = ">=23"
 poetry = "*"
 
 [tool.poetry.scripts]
-karaoke-lyrics-processor = 'karaoke_lyrics_processor.cli:main'
+karaoke-lyrics-processor = "karaoke_lyrics_processor.cli:main"
 
 [tool.black]
 line-length = 140
