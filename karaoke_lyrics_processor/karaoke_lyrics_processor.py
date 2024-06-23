@@ -47,7 +47,6 @@ class KaraokeLyricsProcessor:
         """
         Find the best split point in a line based on the specified criteria.
         """
-
         self.logger.debug(f"Finding best_split_point for line: {line}")
         words = line.split()
         mid_word_index = len(words) // 2
@@ -153,11 +152,12 @@ class KaraokeLyricsProcessor:
 
         processed_lyrics_text = "\n".join(lyrics_lines)
 
+        self.processed_lyrics_text = processed_lyrics_text  # Set the processed lyrics text
         return processed_lyrics_text
 
     def write_to_output_file(self):
         if not hasattr(self, 'processed_lyrics_text') or not self.processed_lyrics_text:
-            self.process()
+            self.process()  # Ensure the text is processed
 
         with open(self.output_filename, "w") as outfile:
             outfile.write(self.processed_lyrics_text)
