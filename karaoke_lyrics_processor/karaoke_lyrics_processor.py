@@ -1,7 +1,5 @@
 import re
 import logging
-# import pyperclip
-
 
 class KaraokeLyricsProcessor:
     def __init__(
@@ -152,11 +150,6 @@ class KaraokeLyricsProcessor:
             iteration_count += 1
 
         processed_lyrics_text = "\n".join(lyrics_lines)
-
-        self.processed_lyrics_text = processed_lyrics_text
-        # pyperclip.copy(processed_lyrics_text)
-
-        self.logger.info(f"Processed lyrics text ready.")
 
         return processed_lyrics_text
 

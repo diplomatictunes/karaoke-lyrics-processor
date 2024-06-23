@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "karaoke-lyrics-processor"
-version = "0.1.1"
+version = "0.1.2"
 description = "Process song lyrics to prepare them for karaoke video production, e.g. by splitting long lines"
 authors = ["Andrew Beveridge <andrew@beveridge.uk>"]
 license = "MIT"
@@ -12,7 +12,6 @@ documentation = "https://github.com/karaokenerds/karaoke-lyrics-processor/blob/m
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
-pyperclip = ">=1.8"
 
 [tool.poetry.group.dev.dependencies]
 black = ">=23"
